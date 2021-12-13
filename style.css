@@ -190,6 +190,11 @@ color: black;
   margin-bottom: 50px;
 }
 
+.carousel-item  {
+  height: 550px;
+  weight: 500px;
+  background-position: center;
+}
 
 
 #transparent
