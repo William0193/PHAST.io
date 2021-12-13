@@ -28,61 +28,6 @@ margin-right: 0px;
 margin-left: 0px;
 }
 
- .callnow
- {
-  background-color: rgba(115,115,115,.99);
-  margin: 20px auto;
-  text-align: center;
-  width: 30%;
-  padding: 5px;
-  border-radius: 20px;
-  border: 2px solid black;
-  position: fixed;
-  bottom: 0px;
-  opacity: 0;
-  z-index: -1;
-  color: black;
-  animation-name: helper;
-  animation-duration: 10s;
-  animation-delay: 10s;
-  animation-iteration-count: 1;
-}
-
-.callnow h1
-{
-  font-size: 1.5rem;
-}
-
-.callnow img
-{
-  width: 20%;
-  height: 20%;
-  margin-right: 80px;
-}
-
-@keyframes helper {
-  0% {
-        opacity: 0;
-        color: black;
-        background-color: grey;
-
-  }
-  50% {
-        opacity: 1;
-        color: black;
-        background-color: grey;
-        z-index: 40;
-
-  }
-  100% {
-        opacity: 1;
-        background-color: rgba(115,115,115,.99);
-        z-index: 40;
-
-  }
-}
-
-
 
 nav
 {
@@ -142,8 +87,6 @@ footer img
   box-shadow: 2px 2px 20px white;
 }
 
-
-
 a
 {
   text-decoration: none;
@@ -182,6 +125,7 @@ color: black;
   padding: 10px;
   height: 100%;
   width: 100%;
+  border: 1px solid black;
   box-shadow: 2px 2px 30px white;
   grid-template-areas:
   'box box'
@@ -190,11 +134,6 @@ color: black;
   margin-bottom: 50px;
 }
 
-.carousel-item  {
-  height: 550px;
-  weight: 500px;
-  background-position: center;
-}
 
 
 #transparent
@@ -233,7 +172,7 @@ color: black;
 grid-area: box;
 width: auto;
 padding: 20px;
-margin: 10px auto;
+margin: auto;
 background-color: rgba(0,0,5,.4);
 color: white;
 text-shadow: 1px 1px 10px red;
@@ -304,13 +243,30 @@ button
   border-radius: 50px;
   padding: 20px;
   color: white;
-  background-color: rgba(115,115,115,.99);
+  background-color: rgba(115,115,115,.8);
   font-family: 'Bebas Neue', cursive;
 }
 
 .box4 a
 {
   color: white;
+  margin: 20px auto;
+}
+
+footer a:hover {
+  color: red;
+  text-shadow: 2px 2px 5px black;
+}
+
+nav a:hover {
+  color: red;
+  text-shadow: 2px 2px 5px black;
+}
+
+.box4 a:hover
+{
+  color: red;
+  text-shadow: 2px 2px 5px black;
   margin: 20px auto;
 }
 
@@ -338,22 +294,23 @@ li
 {
 grid-area: box5;
 min-width: 300px;
-margin: 30px auto;
+margin: 30px 50px;
 height: auto;
 padding: 20px;
 border: 1px solid black;
 border-radius: 50px;
 color: white;
-  background-color: rgba(115,115,115,.99);
+background-color: rgba(115,115,115,.8);
 box-shadow: 2px 2px 30px 4px rgba(255,255,255,.99);
-
 }
+
 
 .box5 h1
 {
   font-size: 300%;
   text-shadow: 2px 3px 10px black;
 }
+
 
 .location
 {
@@ -365,10 +322,11 @@ box-shadow: 2px 2px 30px 4px rgba(255,255,255,.99);
   text-shadow: 2px 3px black;
 }
 
+
 .cWsVKk
 {
   color: white;
-  font-size: 3.1rem;
+  font-size: 3rem;
   text-shadow: 2px 3px 10px black;
 }
 
@@ -396,29 +354,34 @@ iframe
   justify-content: center;
 }
 
-.icons{
+.icons
+{
   background-color: rgba(255,255,255,.98);
   border-radius: 25px;
   width: auto;
 
 }
 
-.box2 a {
+.box2 a
+{
   font-size: 2.5rem;
   color: white;
 }
 
-.slide {
+.slide
+{
   border-radius: 25px;
   font-family: 'Bebas Neue', cursive;
 
 }
 
-.testimonial h1 {
+.testimonial h1
+{
   text-shadow: 2px 3px 10px black;
 }
 
-.testimonial {
+.testimonial
+{
   margin: 20px auto 50px auto;
   width: 90%;
   text-align: center;
@@ -434,12 +397,14 @@ iframe
 }
 
 
-#reviews {
+#reviews
+{
   color: white;
   background-color: white;
 }
 
-#ResponsibidIframeContainer {
+#ResponsibidIframeContainer
+{
   background-color: white;
   border-radius: 10px;
   width: 90%;
@@ -448,13 +413,15 @@ iframe
 }
 
 
-.carousel-indicators {
+.carousel-indicators
+{
   background-color: rgba(0,0,0,.4);
   border-radius: 10px;
 }
 
 
-.carousel-control-next-icon {
+.carousel-control-next-icon
+{
   background-color: black;
   border-radius: 10px;
   padding: 5px;
@@ -462,7 +429,8 @@ iframe
 }
 
 
-.carousel-control-prev-icon {
+.carousel-control-prev-icon
+{
   background-color: black;
   border-radius: 10px;
   padding: 5px;
@@ -470,22 +438,25 @@ iframe
 }
 
 
-.carousel-inner {
+.carousel-inner
+{
   border: 2px solid grey;
   border-radius: 10px;
   box-shadow: 2px 3px 10px white;
 }
 
 
-.icons {
+.icons
+{
   display: flex;
   margin: auto;
   width: 100%;
 }
 
 
-.carousel {
-  width: 80%;
+.carousel
+{
+  width: 70%;
   margin: auto;
 }
 
@@ -493,7 +464,7 @@ iframe
 footer
 {
   margin: auto;
-  width: 90%;
+  width: 100%;
   margin: 30px auto 0 auto;
   padding: 10px 20px;
   display: flex;
@@ -506,7 +477,8 @@ footer
 }
 
 
-.fab {
+.fab
+{
   padding: 1px;
   font-size: 2rem;
   margin: 5px 10px;
@@ -514,16 +486,11 @@ footer
   color: black;
 }
 
-.fab:hover {
+.fab:hover
+{
   color: red;
 }
 
-
-.contact ul
-{
-margin: auto;
-width: 50%;
-}
 
 
 
@@ -536,6 +503,18 @@ width: 50%;
 
 }
 
+
+@media screen and (max-width: 1000px) {
+
+  .content2 {
+    display: grid;
+    grid-template-areas:
+    'box4'
+    'box5';
+  }
+}
+
+
 @media screen and (max-width: 790px) {
   .content2 {
     display: grid;
@@ -545,14 +524,8 @@ width: 50%;
   }
 
 
-  .container {
-
-  }
-
-
-
-
-  .box4 {
+  .box4
+  {
   grid-area: box4;
   width: 90%;
   padding: 20px;
@@ -563,7 +536,9 @@ width: 50%;
   }
 
 
-  .box5 {
+
+  .box5
+  {
   grid-area: box5;
   width: 90%;
   justify-content: center;
@@ -573,18 +548,17 @@ width: 50%;
   margin: 0px auto 30px auto;
   }
 
-  footer a {
+  footer a
+  {
     font-size: .99rem;
 
   }
 
-  .footerSocial {
+  .footerSocial
+  {
     height: 50%;
   }
 
-  .callnow {
-    width: 80%;
-  }
 
 
 
