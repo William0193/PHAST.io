@@ -94,7 +94,7 @@ a
   display: flex;
   letter-spacing: .2rem;
   justify-content: center;
-  color: none;
+  color: black;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -227,9 +227,10 @@ button
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-  'box4 box5';
-  margin: 20px auto;
-  width: 100%;
+  'box4 box6'
+  'box5 box6';
+  margin: 20px;
+  width: 90%;
 }
 
 
@@ -242,10 +243,67 @@ button
   box-shadow: 2px 2px 30px 4px white;
   border-radius: 50px;
   padding: 20px;
-  color: white;
   background-color: rgba(115,115,115,.8);
   font-family: 'Bebas Neue', cursive;
 }
+
+.box6
+{
+  margin: auto;
+  grid-area: box6;
+  width: 90%;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 2px 2px 30px 4px white;
+  border-radius: 50px;
+  padding: 20px;
+  min-width: 400px;
+  background-color: rgba(115,115,115,.8);
+  font-family: 'Bebas Neue', cursive;
+}
+
+.box6 h1 {
+  font-size: 3rem;
+  text-shadow: 2px 3px 10px black;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+
+
+.box6 img {
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 30px 4px white;
+  max-height: 500px;
+}
+
+
+
+ /* .box7 img {
+   height: 80%;
+   width: 80%;
+   border-radius: 20px;
+   border: 1px solid black;
+   box-shadow: 2px 2px 30px 4px white;
+ }
+
+
+
+.box7
+{
+  margin: 40px auto;
+  width: 80%;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 2px 2px 30px 4px white;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  background-color: rgba(115,115,115,.8);
+  font-family: 'Bebas Neue', cursive;
+} */
+
 
 .box4 a
 {
@@ -294,10 +352,10 @@ li
 {
 grid-area: box5;
 min-width: 300px;
-margin: 55px auto 40px auto;
 height: auto;
 width: auto;
 padding: 20px;
+margin: 10px auto 60px auto;
 border: 1px solid black;
 border-radius: 50px;
 color: white;
@@ -332,9 +390,10 @@ box-shadow: 2px 2px 30px 4px rgba(255,255,255,.99);
 
 .cWsVKk
 {
-  color: rgba(255,255,255,.90);
-  font-size: 3rem;
   text-shadow: 2px 3px 10px black;
+  color: white !important;
+  font-size: 2.5rem !important;
+  font-weight: normal !important;
 }
 
 
@@ -350,7 +409,7 @@ iframe
   margin: 10px auto 20px auto;
   box-shadow: 2px 2px 10px black;
   display: flex;
-  width: 90%;
+  width: 95%;
   height: 70%;
 }
 
@@ -388,12 +447,13 @@ iframe
 .testimonial h1
 {
   text-shadow: 2px 3px 10px black;
+  color: white;
 }
 
 .testimonial
 {
   margin: 20px auto 50px auto;
-  width: 90%;
+  width: 80%;
   text-align: center;
   border: 1px solid black;
   box-shadow: 4px 4px 30px 4px white;
@@ -466,7 +526,8 @@ iframe
 
 .carousel
 {
-  width: 70%;
+  width: 60%;
+  height: 60%;
   margin: auto;
 }
 
@@ -503,7 +564,7 @@ footer
 
 
 
-
+/* Everything else */
 @media screen and (max-width: 1200px) {
 
 
@@ -513,14 +574,15 @@ footer
 
 }
 
-
-@media screen and (max-width: 1000px) {
+/* laptops */
+/* @media screen and (max-width: 1000px) {
 
   .content2 {
     display: grid;
     grid-template-areas:
     'box4'
-    'box5';
+    'box5'
+    'box6';
   }
 
   .box4 {
@@ -536,29 +598,38 @@ footer
   iframe {
     width: 90%;
   }
-}
+} */
 
 
-
-@media screen and (max-width: 790px) {
+    /* tablet screens  */
+@media screen and (max-width: 1000px) {
   .content2 {
     display: grid;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin: auto;
     grid-template-areas:
     'box4'
-    'box5';
+    'box5'
+    'box6';
   }
+
 
 
   .box4
   {
   grid-area: box4;
-  width: 90%;
+  width: 80%;
   padding: 20px;
   border-radius: 50px;
-  margin: 0px auto 30px auto;
   display: block;
   justify-content: center;
   }
+
+.box6 {
+  margin: 0px auto 30px auto;
+}
 
 
 
@@ -573,6 +644,11 @@ footer
   margin: 0px auto 30px auto;
   }
 
+.cWsVKk
+{
+  font-size: 2rem !important;
+}
+
   footer a
   {
     font-size: .99rem;
@@ -584,7 +660,87 @@ footer
     height: 50%;
   }
 
+  nav a
+  {
+    font-size: .99rem;
+
+  }
+
+  .navSocial
+  {
+    height: 50%;
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+footer a {
+  font-size: .9rem;
+}
+
+nav a {
+  font-size: .9rem;
+}
+
+.cWsVKk
+{
+  font-size: 2rem !important;
+  padding: 20px !important;
+}
+
+.testimonial h1 {
+  font-size: 2rem;
+  padding: 5px;
+}
+
+
+iframe {
+  margin: auto;
+}
+
+
+.box6 img {
+  height: 70%;
+  width: 70%;
+}
+
+}
 
 
 
+/* for mobile phones  */
+@media screen and (max-width: 375px) {
+
+  nav .Logo
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navSocial
+  {
+    display: none;
+  }
+
+
+    .footerSocial
+    {
+      display: none;
+    }
+
+
+  .box6 {
+    display: none;
+  }
+
+  .testimonials {
+    display: none;
+  }
+
+  .grid {
+    margin: auto;
+    justify-content: center;
+  }
 }
