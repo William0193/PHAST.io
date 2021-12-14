@@ -14,8 +14,7 @@ html
 }
 
 
-
-
+/* Style and background for main container  */
 .container
 {
   /* background-color: white; */
@@ -29,6 +28,7 @@ margin-left: 0px;
 }
 
 
+/*navigation bar, images and social media icons */
 nav
 {
 margin: auto;
@@ -44,6 +44,7 @@ border: 2px solid black;
 box-shadow: 1px 2px 20px white;
 }
 
+
 nav
 {
   height: auto;
@@ -52,20 +53,15 @@ nav
   padding: 1px;
 }
 
-nav img {
-  width: 20%;
-  height: 20%;
-  padding: 5px;
-  border-radius: 10px;
-}
 
-footer img
+nav img
 {
   width: 20%;
   height: 20%;
   padding: 5px;
   border-radius: 10px;
 }
+
 
 .navSocial
 {
@@ -77,6 +73,16 @@ footer img
   box-shadow: 2px 2px 20px white;
 }
 
+/* footer, images and social media icons */
+footer img
+{
+  width: 20%;
+  height: 20%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
 .footerSocial
 {
   display: flex;
@@ -87,6 +93,8 @@ footer img
   box-shadow: 2px 2px 20px white;
 }
 
+
+/* hyperlinks */
 a
 {
   text-decoration: none;
@@ -114,6 +122,8 @@ color: White;
 color: black;
  }
 
+
+/* first content section with bid button and broken phone in background */
 .content
 {
   display: grid;
@@ -142,7 +152,7 @@ color: black;
   border-radius: 10px;
 }
 
-
+/* style for boxes in transparent section */
 .box
 {
   grid-area: box1;
@@ -167,6 +177,7 @@ color: black;
     font-family: 'Bebas Neue', cursive;
 }
 
+/* boxes with text in transparent section */
 .box1
 {
 grid-area: box;
@@ -213,7 +224,7 @@ button
        font-family: 'Bebas Neue', cursive;
 }
 
-
+/* labels for carousel */
 .carousel-item h5, p
 {
   color: black;
@@ -222,6 +233,8 @@ button
   border: 1px solid black;
 }
 
+
+/* second content section below carousel */
 .content2
 {
   display: grid;
@@ -233,7 +246,7 @@ button
   width: 90%;
 }
 
-
+/* store information */
 .box4
 {
   margin: 40px auto;
@@ -247,6 +260,8 @@ button
   font-family: 'Bebas Neue', cursive;
 }
 
+
+/* Photo of Owners */
 .box6
 {
   margin: auto;
@@ -348,6 +363,8 @@ li
   margin: 15px auto;
 }
 
+
+/* map and and location box */
 .box5
 {
 grid-area: box5;
@@ -383,11 +400,11 @@ box-shadow: 2px 2px 30px 4px rgba(255,255,255,.99);
 }
 
 
-#Reviews{
-  color: white;
-}
 
 
+
+
+/* style for google reviews widget H1 */
 .cWsVKk
 {
   text-shadow: 2px 3px 10px black;
@@ -397,12 +414,18 @@ box-shadow: 2px 2px 30px 4px rgba(255,255,255,.99);
 }
 
 
+#Reviews
+{
+  color: white;
+}
+
+
 .imgsection
 {
   margin: 0px auto 50px auto;
 }
 
-
+/* style for map  */
 iframe
 {
   border-radius: 20px;
@@ -413,6 +436,8 @@ iframe
   height: 70%;
 }
 
+
+/* style for phone Manufacturers */
 .icons img
 {
   width: 40px;
@@ -428,8 +453,8 @@ iframe
   background-color: rgba(255,255,255,.98);
   border-radius: 25px;
   width: auto;
-
 }
+
 
 .box2 a
 {
@@ -437,18 +462,20 @@ iframe
   color: white;
 }
 
+
 .slide
 {
   border-radius: 25px;
   font-family: 'Bebas Neue', cursive;
-
 }
+
 
 .testimonial h1
 {
   text-shadow: 2px 3px 10px black;
   color: white;
 }
+
 
 .testimonial
 {
@@ -473,6 +500,8 @@ iframe
   background-color: white;
 }
 
+
+/* style for form */
 #ResponsibidIframeContainer
 {
   background-color: white;
@@ -483,6 +512,7 @@ iframe
 }
 
 
+/* style for buttons on the carousel */
 .carousel-indicators
 {
   background-color: rgba(0,0,0,.4);
@@ -524,6 +554,7 @@ iframe
 }
 
 
+/* width of picture slideshow */
 .carousel
 {
   width: 60%;
@@ -532,6 +563,7 @@ iframe
 }
 
 
+/* style for the footer */
 footer
 {
   margin: auto;
@@ -548,6 +580,7 @@ footer
 }
 
 
+/* style for social media */
 .fab
 {
   padding: 1px;
@@ -574,34 +607,7 @@ footer
 
 }
 
-/* laptops */
-/* @media screen and (max-width: 1000px) {
-
-  .content2 {
-    display: grid;
-    grid-template-areas:
-    'box4'
-    'box5'
-    'box6';
-  }
-
-  .box4 {
-    margin: 10px auto 10px auto;
-  }
-
-  .box5 {
-    margin: 10px auto 20px auto;
-    width: 90%;
-    height: 90%;
-  }
-
-  iframe {
-    width: 90%;
-  }
-} */
-
-
-    /* tablet screens  */
+    /* laptop screens  */
 @media screen and (max-width: 1000px) {
   .content2 {
     display: grid;
@@ -673,7 +679,7 @@ footer
 
 }
 
-
+/* tablet screens */
 @media screen and (max-width: 650px) {
 
 footer a {
